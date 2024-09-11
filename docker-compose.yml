@@ -7,7 +7,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_USER: wnotes_userk
+      MYSQL_USER: wnotes_user
       MYSQL_PASSWORD: password
       MYSQL_DATABASE: wnotes_db
     ports:

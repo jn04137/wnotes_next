@@ -34,3 +34,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Run Database migrations
+
+Run the following command to run migrations with golang migrate after setting up with docker-compose:
+```bash Command for migrations
+migrate -path ./ -database "mysql://wnotes_user:password@tcp(localhost:3306)/wnotes_db" -verbose up
+```
