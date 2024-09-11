@@ -30,7 +30,7 @@ export default function RootLayout({
 function Navbar() {
 	return(
 		<div className="px-4 py-2 flex justify-between text-center">
-			<h1 className="text-2xl bold">wnotes</h1>
+			<h1 className="text-2xl bold"><a href="/">wnotes</a></h1>
 			<div className="text-center space-x-4 align-center">
 				<a href="#">Home</a>
 				<a href="#">About</a>
