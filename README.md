@@ -41,3 +41,16 @@ Run the following command to run migrations with golang migrate after setting up
 ```bash Command for migrations
 migrate -path ./ -database "mysql://wnotes_user:password@tcp(localhost:3306)/wnotes_db" -verbose up
 ```
+
+## Set Up environment variables
+Make sure to create a .env file and add the following env vars to the file
+
+```bash Env variables
+export NEXT_PUBLIC_URL=http://localhost:3000
+export DB_HOST=localhost
+export DB_PORT=3306
+export DB_USER=wnotes_user
+export DB_PASS=password
+export DB_NAME=wnotes_db
+
+```
